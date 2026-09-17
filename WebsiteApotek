@@ -1,0 +1,266 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Judul website -->
+    <title>Apotek Sehat</title>
+
+    <!-- CSS untuk mengatur tampilan -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f9f6;
+        }
+
+        /* Bagian header */
+        header {
+            background-color: #198754;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        header p {
+            margin-top: 10px;
+        }
+
+        /* Menu navigasi */
+        nav {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px gray;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #198754;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+        nav a:hover {
+            color: #0d6efd;
+        }
+
+        /* Isi halaman */
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .welcome {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .welcome h2 {
+            color: #198754;
+        }
+
+        /* Tabel obat */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th {
+            background-color: #198754;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Informasi apotek */
+        .info {
+            margin-top: 30px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .info h2 {
+            color: #198754;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            background-color: #198754;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header website -->
+    <header>
+        <h1>APOTEK SEHAT</h1>
+        <p>Solusi Kesehatan Keluarga Anda</p>
+    </header>
+
+    <!-- Menu website -->
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#obat">Daftar Obat</a>
+        <a href="#informasi">Informasi</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- Isi utama -->
+    <div class="container">
+
+        <!-- Beranda -->
+        <section id="beranda" class="welcome">
+            <h2>Selamat Datang di Apotek Sehat</h2>
+
+            <p>
+                Apotek Sehat menyediakan berbagai kebutuhan obat,
+                vitamin, dan produk kesehatan untuk masyarakat.
+            </p>
+
+            <p>
+                Kami berkomitmen memberikan pelayanan yang
+                ramah dan terpercaya.
+            </p>
+        </section>
+
+        <!-- Daftar obat -->
+        <section id="obat">
+
+            <h2>Daftar Obat</h2>
+
+            <table>
+
+                <tr>
+                    <th>No</th>
+                    <th>Nama Obat</th>
+                    <th>Kategori</th>
+                    <th>Jenis</th>
+                    <th>Stok</th>
+                    <th>Harga</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Paracetamol</td>
+                    <td>Analgesik</td>
+                    <td>Tablet</td>
+                    <td>50</td>
+                    <td>Rp5.000</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Amoxicillin</td>
+                    <td>Antibiotik</td>
+                    <td>Kapsul</td>
+                    <td>30</td>
+                    <td>Rp10.000</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Antasida</td>
+                    <td>Lambung</td>
+                    <td>Tablet</td>
+                    <td>40</td>
+                    <td>Rp7.000</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Vitamin C</td>
+                    <td>Vitamin</td>
+                    <td>Tablet</td>
+                    <td>60</td>
+                    <td>Rp8.000</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Obat Batuk</td>
+                    <td>Batuk</td>
+                    <td>Sirup</td>
+                    <td>25</td>
+                    <td>Rp15.000</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- Informasi -->
+        <section id="informasi" class="info">
+
+            <h2>Informasi Apotek</h2>
+
+            <p>
+                <b>Nama:</b> Apotek Sehat
+            </p>
+
+            <p>
+                <b>Jam Operasional:</b> 08.00 - 21.00
+            </p>
+
+            <p>
+                <b>Pelayanan:</b> Obat, Vitamin, dan Produk Kesehatan
+            </p>
+
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak" class="info">
+
+            <h2>Kontak</h2>
+
+            <p>
+                📞 Telepon: 0812-3456-7890
+            </p>
+
+            <p>
+                📧 Email: apoteksehat@gmail.com
+            </p>
+
+            <p>
+                📍 Alamat: Gorontalo, Indonesia
+            </p>
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Apotek Sehat</p>
+    </footer>
+
+</body>
+
+</html>
+```
