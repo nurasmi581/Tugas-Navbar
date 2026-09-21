@@ -1,0 +1,89 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #1877f2;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+        
+        /* Logo facebook */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+        .logo span {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Menu */
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        /* Icon */ 
+        .menu i {
+            margin-right: 7px;
+            font-size: 16px;
+        }
+
+        .menu a:hover {
+            color: #dbe9ff;
+        }
+
+        /* Halaman Utama */
+        .hero{
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #eaf3ff,#ffffff);
+        }
+
+        .hero-text{
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            font-weight: bold;
+            color: #1877f2;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: #050505;
+            margin: 0;
+        }
