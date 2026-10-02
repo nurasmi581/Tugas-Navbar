@@ -1,0 +1,249 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matador VBC</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #ecde0f;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .logo span {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            gap: 25px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: red;
+        }
+
+        /* Halaman Utama */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        .hero h1 {
+            color: #af0d0d;
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ecde0f;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Profil */
+        .profil {
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .profil h2 {
+            margin-bottom: 15px;
+            color: #af0d0d;
+        }
+
+        .profil p {
+            line-height: 1.6;
+        }
+
+        /* Login */
+        .login {
+            width: 320px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        .login h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #af0d0d;
+        }
+
+        .login label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .login input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ecde0f;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login button:hover {
+            background-color: #d4c500;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+            color: white;
+            margin-top: 30px;
+        }
+
+        /* Tampilan HP */
+        @media (max-width: 600px) {
+            nav {
+                height: auto;
+                flex-direction: column;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .menu {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .login {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="download.jfif" alt="Logo">
+            <span>Matador VBC</span>
+        </div>
+
+        <div class="menu">
+            <a href="#beranda"><i class="fa-solid fa-house"></i> Beranda</a>
+            <a href="#profil"><i class="fa-solid fa-user"></i> Profil</a>
+            <a href="#login"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        </div>
+    </nav>
+
+    <!-- Halaman Utama -->
+    <section class="hero" id="beranda">
+        <h1>Selamat Datang <i class="fa-solid fa-hand"></i></h1>
+        <p>Matador Muda, Bersama Meraih Prestasi.</p>
+        <a href="#profil">Lihat Profil</a>
+    </section>
+
+    <!-- Profil -->
+    <section class="profil" id="profil">
+        <h2>Profil Matador VBC</h2>
+        <p>
+            Matador VBC adalah tempat berkumpulnya para pecinta
+            olahraga bola voli untuk mengembangkan bakat,
+            meningkatkan kemampuan, dan menjalin kebersamaan.
+        </p>
+    </section>
+
+    <!-- Halaman Login -->
+    <div class="login" id="login">
+        <h2>Login</h2>
+
+        <form onsubmit="login(event)">
+            <label>Username</label>
+            <input type="text" id="username"
+                   placeholder="Masukkan username" required>
+
+            <label>Password</label>
+            <input type="password" id="password"
+                   placeholder="Masukkan password" required>
+
+            <button type="submit">Masuk</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Matador VBC</p>
+    </footer>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+            alert("Form login berhasil diisi!");
+        }
+    </script>
+
+</body>
+</html>
+```
